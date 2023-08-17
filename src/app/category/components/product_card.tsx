@@ -11,7 +11,7 @@ import { ShoppingBag } from "lucide-react";
 
 const Product_Card: FC<{ item: Product }> = ({ item }) => {
   const imageURL = urlForImage(item.image).url();
-  console.log(imageURL);
+  // console.log(imageURL);
   return (
     <>
       <div className="my-5">

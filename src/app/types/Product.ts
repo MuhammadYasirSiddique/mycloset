@@ -13,6 +13,9 @@ export interface cart_Product {
 }
 
 export interface Product {
+  map(
+    arg0: (item: Product) => import("react").JSX.Element
+  ): import("react").ReactNode;
   qty: number;
   urlForImage: any;
   id: string;
@@ -25,4 +28,5 @@ export interface Product {
   image: any;
   price: number;
   category: { category: string };
+  status: string;
 }
